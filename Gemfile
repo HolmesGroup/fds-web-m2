@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '2.1.0'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
@@ -28,8 +27,10 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-
+group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -42,31 +43,3 @@ gem 'jbuilder', '~> 1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-gem 'foundation-rails', '5.0.3.1'
-gem 'puma'
-gem 'slim-rails'
-gem 'therubyracer', :platform=>:ruby
-
-group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
-  gem 'haml2slim'
-  gem 'html2haml'
-  gem 'quiet_assets'
-  gem 'rails_layout'
-end
-
-group :development, :test do
-  gem 'fabrication'
-  gem 'rspec-rails'
-end
-
-group :test do
-  gem 'capybara'
-  gem 'cucumber-rails', :require=>false
-  gem 'database_cleaner', '1.0.1'
-  gem 'email_spec'
-  gem 'launchy'
-end
-

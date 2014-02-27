@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-FdsWebM2::Application.config.secret_key_base = '00a3f3a8748c193149b67e31bf286b8498a46e0f48a46d8c7f1995caa01e1a79b73f1ab8224d3d2669d7ada2e46a5d09072fac7bfdc71c01fccd3e74677ff0e2'
+FdsWebM2::Application.config.secret_key_base = 'a1c67c80182f37c1d987818c6b6d8113d4a70f154c425bccd827de4c3ac5ec75a9f7b77ae98ec0a7c0dac9f118dcbc550aee7f4b20a54dfa94c32b56870378a1'
